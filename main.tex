@@ -1,0 +1,26 @@
+% aspect-ration allows to make regular vs. panoramic presentations
+% possible values are: 1610, 169, 149, 54, 43, 32.
+\documentclass[aspectratio=1610,11pt]{beamer}
+
+\mode<presentation>
+{
+  % for templates and color schemes see:
+  % https://www.hartwork.org/beamer-theme-matrix/
+  \usetheme{Frankfurt}
+  \usecolortheme{default}
+  % gets rid of bottom navigation bars
+  \setbeamertemplate{navigation symbols}{}
+  % insert page numbers on the bottom of the screen
+  %\setbeamertemplate{footline}[page number]{}
+}
+
+\input{common.tex}
+\graphicspath{ {./img/} }
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+%\DeclareCaptionFormat{listing}{\vskip1pt#1#2#3}
+\captionsetup[lstlisting]{format=listing,singlelinecheck=false}
+\lstset{language=C++}
+
+\begin{document}
+\input{slides.tex}
+\end{document}
