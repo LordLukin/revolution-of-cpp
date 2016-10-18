@@ -3,10 +3,10 @@
 \usepackage{multicol}
 \usepackage{graphicx}
 \usepackage{caption}
-%\usepackage{soul}
-%\usepackage{tikz}
-%\usepackage{mathtools}
-%\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{tikz}
+\usepackage{mathtools}
+\usepackage{xcolor}
 \usepackage[absolute,overlay]{textpos}
 
 % comment this out to disable outline slides, between sections
@@ -53,6 +53,18 @@
 %\listingNormal
 #2
 \end{frame}
+}
+
+
+% \slide{name}{content}
+\newcommand{\timelineSlide}[3]
+{
+    \subsection*{#2}
+    \begin{frame}[#1]
+        \frametitle{#2}
+        %\listingNormal
+        #3
+    \end{frame}
 }
 
 
