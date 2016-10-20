@@ -35,7 +35,42 @@
     \lstinputlisting{"src/c-with-classes.hpp"}
 }
 
+\timelineSlide{LOL}{
+    lol
+}{
+\newcommand{\foo}{\color{blue}\makebox[0pt]{{\large \textbullet}}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}
+\begin{table}
+%    \renewcommand\arraystretch{1.4}\arrayrulecolor{blue}
+%    \captionsetup{singlelinecheck=false, font=blue, labelfont=sc, labelsep=quad}
+%    \caption{Timeline}\vskip -1.5ex
+    \begin{tabular}{@{\,}r <{\hskip 2pt} !{\foo} >{\raggedright\arraybackslash}p{2.6cm}}
+%        \toprule
+%        \addlinespace[1.5ex]
+        \textbf{1979} & \textbf{C with Classes}\\
+        1981 & New features\\
+        1983 & 1st std lib\\
+        1984 & C84/C++\\
+        1985 & Cfront 1.0\\
+        1989 & Cfront 2.0\\
+        1991 & Cfront 3.0\\
+        1993 & Cfront 4.0\\
+        1998 & C++98\\
+        2003 & C++03\\
+        2011 & C++11\\
+        2014 & C++14\\
+        2017 & C++17\\
+        2020 & C++20\\
+    \end{tabular}
+\end{table}
+}
+
 \timelineSlide{C with Classes in 1981}{
+    \begin{itemize}
+        \item inline functions
+        \item default arguments
+        \item overloading of the assignment operator
+    \end{itemize}
+}{
     \begin{tikzpicture}
         \draw[thick,->,blue] (0,0.2)--(0,-6.8) % x axis
             node(1979)[pos=1/42,fill,circle,inner sep=2pt]{}
@@ -94,13 +129,6 @@
             (2020) -- (l2020)
             ;
     \end{tikzpicture}
-}
-{
-    \begin{itemize}
-        \item inline functions
-        \item default arguments
-        \item overloading of the assignment operator
-    \end{itemize}
 }
 
 \slide{C with Classes}{
