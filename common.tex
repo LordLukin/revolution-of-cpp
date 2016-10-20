@@ -59,11 +59,18 @@
 % \slide{name}{content}
 \newcommand{\timelineSlide}[3]
 {
-    \subsection*{#2}
-    \begin{frame}[#1]
-        \frametitle{#2}
+    \subsection*{#1}
+    \begin{frame}[t]
+        \frametitle{#1}
         %\listingNormal
-        #3
+        \begin{columns}
+            \begin{column}{0.3\textwidth}
+                #2
+            \end{column}
+            \begin{column}{0.7\textwidth}
+                #3
+            \end{column}
+        \end{columns}
     \end{frame}
 }
 
