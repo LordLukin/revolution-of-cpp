@@ -62,11 +62,13 @@
 }
 
 
+\newcommand{\foo}{\color{blue}\makebox[0pt]{{\large \textbullet}}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}
+
 % \slide{name}{content}
 \newcommand{\timelineSlide}[3]
 {
     \subsection*{#1}
-    \begin{frame}[t]
+    \begin{frame}
         \frametitle{#1}
         %\listingNormal
         \begin{columns}
@@ -74,7 +76,55 @@
                 #2
             \end{column}
             \begin{column}{0.27\textwidth}
-                #3
+                \begin{table}
+                    %    \renewcommand\arraystretch{1.4}\arrayrulecolor{blue}
+                    %    \captionsetup{singlelinecheck=false, font=blue, labelfont=sc, labelsep=quad}
+                    %    \caption{Timeline}\vskip -1.5ex
+                    \begin{tabular}{@{\,}r <{\hskip 2pt} !{\foo} >{\raggedright\arraybackslash}p{2.6cm}}
+                        %        \toprule
+                        %        \addlinespace[1.5ex]
+                        #3
+                    \end{tabular}
+                \end{table}
+                \vspace{\fill}
+            \end{column}
+        \end{columns}
+    \end{frame}
+}
+
+% \slide{name}{content}
+\newcommand{\timeSlide}[3]
+{
+    \subsection*{#1}
+    \begin{frame}
+        \frametitle{#1}
+        %\listingNormal
+        \begin{columns}
+            \begin{column}{0.73\textwidth}
+                #2
+            \end{column}
+            \begin{column}{0.27\textwidth}
+                \begin{tikzpicture}
+                    \draw[thick,->,blue] (0,0.2)--(0,-6.8) % x axis
+                    node(1979)[pos=1/42,fill,circle,inner sep=2pt]{}
+                    node(1981)[pos=3.5/42,fill,circle,inner sep=2pt]{}
+                    node(1983)[pos=6/42,fill,circle,inner sep=2pt]{}
+                    node(1984)[pos=7.25/42,fill,circle,inner sep=2pt]{}
+                    node(1985)[pos=8.5/42,fill,circle,inner sep=2pt]{}
+                    %node(1986)[pos=8/42,fill,circle,inner sep=2pt]{}
+                    %node(1987)[pos=9/42,fill,circle,inner sep=2pt]{}
+                    node(1989)[pos=11/42,fill,circle,inner sep=2pt]{}
+                    %node(1990)[pos=12/42,fill,circle,inner sep=2pt]{}
+                    node(1991)[pos=13/42,fill,circle,inner sep=2pt]{}
+                    node(1993)[pos=15/42,fill,circle,inner sep=2pt]{}
+                    node(1998)[pos=20/42,fill,circle,inner sep=2pt]{}
+                    node(2003)[pos=25/42,fill,circle,inner sep=2pt]{}
+                    node(2011)[pos=31/42,fill,circle,inner sep=2pt]{}
+                    node(2014)[pos=34/42,fill,circle,inner sep=2pt]{}
+                    node(2017)[pos=37/42,fill,circle,inner sep=2pt]{}
+                    node(2020)[pos=40/42,fill,circle,inner sep=2pt]{};
+                    #3
+                \end{tikzpicture}
             \end{column}
         \end{columns}
     \end{frame}

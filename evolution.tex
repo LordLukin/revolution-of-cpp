@@ -4,134 +4,27 @@
     Simple program in Simula
 }
 
+
 \slide{BCPL}{
     Before C Programming Language\\
     \pause
     Basic Combined Programming Language
 }
 
+
 \slide{Genealogy}{
     Genealogy of C++ from C and Simula
 }
+
 
 \slide{Timeline}{
     Timeline on the bottom of page, new dates will gradually appear\\
     Maybe new type of slides? TimelineSlide?
 }
 
-\slide{C with Classes}{
-\begin{itemize}%[<+->]
-    \item classes
-    \item derived classes
-    \item public and private access control
-    \item constructors and destructors
-    \item \textbf<2>{call and return functions (removed later)}
-    \item friend classes
-    \item type checking and conversion of function arguments
-\end{itemize}
-}
 
-\slide{Example code in C with Classes}{
-    \lstinputlisting{"src/c-with-classes.hpp"}
-}
-
-\timelineSlide{LOL}{
-    lol
-}{
-\newcommand{\foo}{\color{blue}\makebox[0pt]{{\large \textbullet}}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}
-\begin{table}
-%    \renewcommand\arraystretch{1.4}\arrayrulecolor{blue}
-%    \captionsetup{singlelinecheck=false, font=blue, labelfont=sc, labelsep=quad}
-%    \caption{Timeline}\vskip -1.5ex
-    \begin{tabular}{@{\,}r <{\hskip 2pt} !{\foo} >{\raggedright\arraybackslash}p{2.6cm}}
-%        \toprule
-%        \addlinespace[1.5ex]
-        \textbf{1979} & \textbf{C with Classes}\\
-        1981 & New features\\
-        1983 & 1st std lib\\
-        1984 & C84/C++\\
-        1985 & Cfront 1.0\\
-        1989 & Cfront 2.0\\
-        1991 & Cfront 3.0\\
-        1993 & Cfront 4.0\\
-        1998 & C++98\\
-        2003 & C++03\\
-        2011 & C++11\\
-        2014 & C++14\\
-        2017 & C++17\\
-        2020 & C++20\\
-    \end{tabular}
-\end{table}
-}
-
-\timelineSlide{C with Classes in 1981}{
-    \begin{itemize}
-        \item inline functions
-        \item default arguments
-        \item overloading of the assignment operator
-    \end{itemize}
-}{
-    \begin{tikzpicture}
-        \draw[thick,->,blue] (0,0.2)--(0,-6.8) % x axis
-            node(1979)[pos=1/42,fill,circle,inner sep=2pt]{}
-            node(1981)[pos=3.5/42,fill,circle,inner sep=2pt]{}
-            node(1983)[pos=6/42,fill,circle,inner sep=2pt]{}
-            node(1984)[pos=7.25/42,fill,circle,inner sep=2pt]{}
-            node(1985)[pos=8.5/42,fill,circle,inner sep=2pt]{}
-%            node(1986)[pos=8/42,fill,circle,inner sep=2pt]{}
-%            node(1987)[pos=9/42,fill,circle,inner sep=2pt]{}
-            node(1989)[pos=11/42,fill,circle,inner sep=2pt]{}
-%            node(1990)[pos=12/42,fill,circle,inner sep=2pt]{}
-            node(1991)[pos=13/42,fill,circle,inner sep=2pt]{}
-            node(1993)[pos=15/42,fill,circle,inner sep=2pt]{}
-            node(1998)[pos=20/42,fill,circle,inner sep=2pt]{}
-            node(2003)[pos=25/42,fill,circle,inner sep=2pt]{}
-            node(2011)[pos=31/42,fill,circle,inner sep=2pt]{}
-            node(2014)[pos=34/42,fill,circle,inner sep=2pt]{}
-            node(2017)[pos=37/42,fill,circle,inner sep=2pt]{}
-            node(2020)[pos=40/42,fill,circle,inner sep=2pt]{};
-            
-        \draw[thin,blue]
-            (2, 0) node(l1979)[fill=green!20,rounded corners] {\textbf{1979} C with Classes}
-            (2,-0.4) node(l1981)[align=left] {1981 New features}
-            (2,-0.8) node(l1983)[align=left] {1983 1st std lib}
-            (2,-1.1) node(l1984)[align=left] {1984 C84/C++ }
-            (2,-1.4) node(l1985)[align=left] {1985 Cfront 1.0}
-%            (2,-2.0) node(l1986)[align=left] {1986 Cfront 1.1}
-%            (2,-2.4) node(l1987)[align=left] {1987 Cfront 1.2}
-            (2,-1.8) node(l1989)[align=left] {1989 Cfront 2.0}
-%            (2,-3.2) node(l1990)[align=left] {1990 Cfront 2.1}
-            (2,-2.2) node(l1991)[align=left] {1991 Cfront 3.0}
-            (2,-2.6) node(l1993)[align=left] {1993 Cfront 4.0}
-            (2,-3.2) node(l1998)[align=left] {1998 C++98}
-            (2,-4.0) node(l2003)[align=left] {2003 C++03}
-            (2,-5.0) node(l2011)[align=left] {2011 C++11}
-            (2,-5.5) node(l2014)[align=left] {2014 C++14}
-            (2,-6.0) node(l2017)[align=left] {2017 C++17}
-            (2,-6.5) node(l2020)[align=left] {2020 C++20};
-            
-        \draw[] (1979) -- (l1979)
-            (1981) -- (l1981)
-            (1983) -- (l1983)
-            (1984) -- (l1984)
-            (1985) -- (l1985)
-%            (1986) -- (l1986)
-%            (1987) -- (l1987)
-            (1989) -- (l1989)
-%            (1990) -- (l1990)
-            (1991) -- (l1991)
-            (1993) -- (l1993)
-            (1998) -- (l1998)
-            (2003) -- (l2003)
-            (2011) -- (l2011)
-            (2014) -- (l2014)
-            (2017) -- (l2017)
-            (2020) -- (l2020)
-            ;
-    \end{tikzpicture}
-}
-
-\slide{C with Classes}{
+\timeSlide{C with Classes}{
+    Additions to C language:
     \begin{itemize}%[<+->]
         \item classes
         \item derived classes
@@ -141,4 +34,226 @@
         \item friend classes
         \item type checking and conversion of function arguments
     \end{itemize}
+}{          
+    \draw[thin,blue]
+    (0.5, 0) node(l1979)[anchor=west,fill=green!20,rounded corners] {\textbf{1979} C with Classes};
+    
+    \draw[] (1979) -- (l1979);
 }
+
+\slide{Example code in C with Classes}{
+    \lstinputlisting{"src/c-with-classes.hpp"}
+}
+
+
+\slide{Roots of C++}{
+    In C++ you can see the influence of 4 languages:
+    \begin{itemize}
+        \item C provided all base and syntax
+        \item Simula provided classes and inheritance
+        \item Algol68 provided:
+            \begin{itemize}
+                \item operator overloading, 
+                \item references 
+                \item ability to declare variables anywhere in a block  %NOTE: in C you had to declare variables first
+            \end{itemize}
+        \item BCPL provided // comments (later in 1985).
+    \end{itemize}
+}
+
+
+\slide{Roots of C++}{
+    Languages that were considered as a base of C++:
+    \begin{itemize}
+        \item Modula2
+        \item Ada
+        \item Smalltalk
+        \item Mesa
+        \item Clu
+        \item C
+    \end{itemize}
+}
+
+
+\timeSlide{First standard library}{
+    \begin{itemize}
+        \item complex numbers
+        \item string
+        \item later: iostreams
+    \end{itemize}
+}{          
+    \draw[thin,blue]
+        (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
+        (0.5,-0.4) node(l1981)[anchor=west] {1981 New features}
+        (0.5,-0.8) node(l1983)[anchor=west,fill=green!20,rounded corners] {\textbf{1983} 1st std lib};
+            
+    \draw[]
+    (1979) -- (l1979)
+    (1981) -- (l1981)
+    (1983) -- (l1983);
+}
+
+
+\slide{C with Classes - summary}{
+    \begin{itemize}
+        \item Years of development: 1979-1983
+        \item The idea was great
+        \item The aim was clear:
+            \begin{itemize}
+                \item help programmers to organize code with classes
+                \item without the loss of efficiency 
+                \item and without requiring from users learning something completely new
+            \end{itemize}
+        \item C with Classes didn't have many users :( 
+        \item It wouldn't pay to support this language in the form it was
+        \item C with Classes was a "medium success"
+    \end{itemize}
+    Bjarne knew about it and drawn conclusions.
+}
+
+
+\timeSlide{C84 and Cfront}{
+    \begin{itemize}
+        \item C with Classes got new name - C84
+        \item C84 got a new name - C++
+        \item First C++ compiler - Cfront
+        \begin{itemize}%[<+->]
+            \item Originally written in... C with Classes
+            \item Transpiler to C code
+            \item Portability matters
+            \item C++ versions were named after Cfront releases
+        \end{itemize}
+    \end{itemize}
+ 
+}{
+    \draw[thin,blue]
+    (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
+    (0.5,-0.4) node(l1981)[anchor=west] {1981 New features}
+    (0.5,-0.7) node(l1983)[anchor=west] {1983 1st std lib}
+    (0.5,-1.1) node(l1984)[anchor=west,fill=green!20,rounded corners] {\textbf{1984} C84/C++};
+    
+    \draw[]
+    (1979) -- (l1979)
+    (1981) -- (l1981)
+    (1983) -- (l1983)
+    (1984) -- (l1984);
+}
+
+
+\timeSlide{Cfront 1.0}{
+    New features:
+    \begin{enumerate}
+        \item Virtual functions
+        \item Function name and operator overloading
+        \item References
+        \item Constants (const)
+        \item User-controlled free-storage memory control // New and delete operators
+        \item Improved type checking
+        \item Scope resolution operator (::)
+        \item BCPL-style comment terminated by end-of-line
+    \end{enumerate}
+    
+}{
+    \draw[thin,blue]
+    (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
+    (0.5,-0.4) node(l1981)[anchor=west] {1981 New features}
+    (0.5,-0.7) node(l1983)[anchor=west] {1983 1st std lib}
+    (0.5,-1.0) node(l1984)[anchor=west] {1984 C84/C++}
+    (0.5,-1.4) node(l1985)[anchor=west,fill=green!20,rounded corners] {\textbf{1985} Cfront 1.0};
+    
+    \draw[]
+    (1979) -- (l1979)
+    (1981) -- (l1981)
+    (1983) -- (l1983)
+    (1984) -- (l1984)
+    (1985) -- (l1985);
+}
+
+
+\slide{Example code in C++ 1.0}{
+    Virtual functions:
+    \lstinputlisting{"src/cfront1_virtual.hpp"}
+}
+
+
+\slide{Example code in C++ 1.0}{
+    Overloaded functions:
+    \lstinputlisting{"src/cfront1_overload.hpp"}
+}
+
+
+\slide{Example code in C++ 1.0}{
+    New and delete operators:
+    Because you want to write that:
+    \lstinputlisting[linerange={1-1}]{"src/cfront1_new.hpp"}\pause
+    Instead of that:
+    \lstinputlisting[linerange={3-5}]{"src/cfront1_new.hpp"}
+}
+
+
+\slide{Example code in C++ 1.0}{
+    Improved type checking:
+    \lstinputlisting{"src/cfront1_printf.hpp"}
+}
+
+
+\timeSlide{Complete timeline}{
+}{    
+    \draw[thin,blue]
+    (0.5, 0) node(l1979)[anchor=west,fill=green!20,rounded corners] {\textbf{1979} C with Classes}
+    (0.5,-0.4) node(l1981)[anchor=west] {1981 New features}
+    (0.5,-0.7) node(l1983)[anchor=west] {1983 1st std lib}
+    (0.5,-1.0) node(l1984)[anchor=west] {1984 C84/C++ }
+    (0.5,-1.3) node(l1985)[anchor=west] {1985 Cfront 1.0}
+    %(0.5,-2.0) node(l1986)[anchor=west] {1986 Cfront 1.1}
+    %(0.5,-2.4) node(l1987)[anchor=west] {1987 Cfront 1.2}
+    (0.5,-1.6) node(l1989)[anchor=west] {1989 Cfront 2.0}
+    %(0.5,-3.2) node(l1990)[anchor=west] {1990 Cfront 2.1}
+    (0.5,-2.0) node(l1991)[anchor=west] {1991 Cfront 3.0}
+    (0.5,-2.4) node(l1993)[anchor=west] {1993 Cfront 4.0}
+    (0.5,-3.2) node(l1998)[anchor=west] {1998 C++98}
+    (0.5,-4.0) node(l2003)[anchor=west] {2003 C++03}
+    (0.5,-5.0) node(l2011)[anchor=west] {2011 C++11}
+    (0.5,-5.5) node(l2014)[anchor=west] {2014 C++14}
+    (0.5,-6.0) node(l2017)[anchor=west] {2017 C++17}
+    (0.5,-6.5) node(l2020)[anchor=west] {2020 C++20};
+    
+    \draw[]
+    (1979) -- (l1979)
+    (1981) -- (l1981)
+    (1983) -- (l1983)
+    (1984) -- (l1984)
+    (1985) -- (l1985)
+    %(1986) -- (l1986)
+    %(1987) -- (l1987)
+    (1989) -- (l1989)
+    %(1990) -- (l1990)
+    (1991) -- (l1991)
+    (1993) -- (l1993)
+    (1998) -- (l1998)
+    (2003) -- (l2003)
+    (2011) -- (l2011)
+    (2014) -- (l2014)
+    (2017) -- (l2017)
+    (2020) -- (l2020);
+}
+
+
+%\timelineSlide{LOL}{
+%    lol
+%}{
+%    \textbf{1979} & \textbf{C with Classes}\\
+%    1981 & New features\\
+%    1983 & 1st std lib\\
+%    1984 & C84/C++\\
+%    1985 & Cfront 1.0\\
+%    1989 & Cfront 2.0\\
+%    1991 & Cfront 3.0\\
+%    1993 & Cfront 4.0\\
+%    1998 & C++98\\
+%    2003 & C++03\\
+%    2011 & C++11\\
+%    2014 & C++14\\
+%    2017 & C++17\\
+%    2020 & C++20\\
+%}
