@@ -4,7 +4,7 @@ HDRS:=$(wildcard src/*)
 
 TEXFLAGS:=-file-line-error -halt-on-error
 
-MAIN:=AutonomousVehicles
+MAIN:=main
 DVI :=$(MAIN).dvi
 PDF :=$(MAIN).pdf
 
