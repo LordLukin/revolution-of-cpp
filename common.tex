@@ -131,12 +131,12 @@
 }
 
 
-\newcommand{\sectionSlide}[3]
+\newcommand{\sectionSlide}[4]
 {
 \section{#1}
 {
 \usebackgroundtemplate{
-  \parbox[b][\paperheight][t]{\paperwidth}{\centering\includegraphics[width=#3]{#2}}
+  \parbox[b][\paperheight][#4]{\paperwidth}{\centering\includegraphics[width=#3]{#2}}
 }
 \begin{frame}
 \frametitle{#1}

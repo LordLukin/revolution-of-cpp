@@ -1,8 +1,20 @@
-\sectionSlide{Bright future}{c++-logo}{\paperheight}
+\sectionSlide{Bright future}{c++-logo}{\paperheight}{b}
 
 \slide{stdlib is poor}{
-    \centering
-    \only<1>{Some people say, that C++ standard library is small...}
-    %\only<1>{Some people say, that C++ standard library is small...} % TODO: image from Sutter
-    \only<2>{\includegraphics[height=0.8\paperheight]{bloated-jabbascript-frameworks}}
+    \begin{columns}
+        \begin{column}{0.3\textwidth}
+            \begin{itemize}[<+->]
+                \item Some people say, that C++ standard library is small...
+                \item In comparison with another languages
+                \item Examples from presentation \textit{"One C++"} by Herb Sutter
+                \item But it will grow in next standards
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+            \only<1>{\includegraphics[height=0.7\paperheight]{cpp_libs}}
+            \only<2>{\includegraphics[height=0.85\paperheight]{cpp11_lib}}
+            \only<3>{\includegraphics[height=0.8\paperheight]{cpp11_lib2}}\\
+            \only<4>{\centering \includegraphics[height=0.8\paperheight]{bloated-jabbascript-frameworks}}
+        \end{column}
+    \end{columns}
 }
