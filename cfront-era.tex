@@ -1,17 +1,47 @@
 \sectionSlide{Cfront era}{binario}{\paperwidth}{b}
 
+
+\slide{The C++ Programming language - 1st edition (1983)}{
+    %NOTE: Tell that Bjarne wrote this book to show people how to code in C++. They were reluctant to write Object Oriented code. They were skeptical. How do you learn anything new in programming? I guess that you do the same thing as I do. There are 2 schools.
+    \only<1>{
+        \centering 
+        \includegraphics[height=0.8\paperheight]{the-cpp-programming-language}
+    }
+    %NOTE: First is changing things and seeing what happens. It's easy. In that way I can learn many things.
+    \only<2>{
+        \centering 
+        \includegraphics[height=0.8\paperheight]{changing-stuff-and-seeing-what-happens}
+    }
+    %NOTE: The other - just trying some stuff until it works
+    \only<3>{
+        \centering 
+        \includegraphics[height=0.8\paperheight]{trying-stuff-until-it-works}
+    }
+    %NOTE: These are really good books. I recommend them both.
+    %NOTE: But the interesting fact is the opening line of that book. Bjarne put this text there:
+    \begin{block}<4>{The opening line}
+        \textit{``C++ is a general purpose programming language designed to make programming more enjoyable for the serious programmer''}
+    \end{block}
+    %NOTE: But reviewers weren't happy with that and couldn't believe that it was the main reason. Opening line was changed to below:
+    \begin{block}<5>{The opening line}
+        \textit{``C++ was designed primarily so that the author and his friends would not have to program in assembler, C, or various modern high-level languages. Its main purpose is to make writing good programs easier and more pleasant for the individual programmer''}
+    \end{block}
+    %NOTE: And it was accepted without any problems
+}
+
+
 \timeSlide{C84 and Cfront}{
-    \begin{itemize}
+    \itemstep{
         \item C with Classes got new name - C84
-        \item C84 got a new name - C++
+        \item A few months later C84 got a new name - C++
         \item First C++ compiler - Cfront
-        \begin{itemize}%[<+->]
+        \begin{itemize}
             \item Originally written in... C with Classes
             \item Transpiler to C code
             \item Portability matters
             \item C++ versions were named after Cfront releases
         \end{itemize}
-    \end{itemize}
+    }
  
 }{
     \draw[thin,blue]
@@ -30,16 +60,16 @@
 
 \timeSlide{Cfront 1.0}{
     New features:
-    \begin{enumerate}
+    \enumstep{
         \item Virtual functions
         \item Function name and operator overloading
         \item References
         \item Constants (const)
-        \item User-controlled free-storage memory control // New and delete operators
+        \item User-controlled free-storage memory control %NOTE: New and delete operators
         \item Improved type checking
         \item Scope resolution operator (::)
         \item BCPL-style comment terminated by end-of-line
-    \end{enumerate}
+    }
     
 }{
     \draw[thin,blue]
@@ -60,13 +90,16 @@
 
 \slide{Example code in C++ 1.0}{
     Virtual functions:
-    \lstinputlisting{"src/cfront1_virtual.hpp"}
+    \only<1>{\lstinputlisting{"src/cfront1_virtual.hpp"}}
+    %NOTE: Virtual meant abstract
+    \only<2>{\highlightedListing{7}{8}{"src/cfront1_virtual.hpp"}}
 }
 
 
 \slide{Example code in C++ 1.0}{
     Overloaded functions:
-    \lstinputlisting{"src/cfront1_overload.hpp"}
+    \only<1>{\lstinputlisting{"src/cfront1_overload.hpp"}}
+%    \only<2>{\highlightedListing{1}{1}{"src/cfront1_overload.hpp"}}
 }
 
 
@@ -107,18 +140,6 @@
     (1983) -- (l1983)
     (1984) -- (l1984)
     (1985) -- (l1985);
-}
-
-
-\slide{The C++ Programming language - 1st edition (1983)}{
-    \pause
-    \begin{block}<2>{The opening line}
-        \textit{"C++ is a general purpose programming language designed to make programming more enjoyable for the serious programmer"}
-    \end{block}
-    
-    \begin{block}<3>{The opening line}
-        \textit{"C++ was designed primarily so that the author and his friends would not have to program in assembler, C, or various modern high-level languages. Its main purpose is to make writing good programs easier and more pleasant for the individual programmer"}
-    \end{block}
 }
 
 

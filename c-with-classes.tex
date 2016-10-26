@@ -21,17 +21,33 @@
 }
 
 
+%\slide{Roots of C++}{
+%    In C++ you can see the influence of 4 languages:
+%    \begin{itemize}
+%        \item C provided all base and syntax
+%        \item Simula provided classes and inheritance
+%        \item Algol68 provided:
+%        \begin{itemize}
+%            \item operator overloading, 
+%            \item references 
+%            \item ability to declare variables anywhere in a block  %NOTE: in C you had to declare variables first
+%        \end{itemize}
+%        \item BCPL provided // comments (later in 1985).
+%    \end{itemize}
+%}
+
+
 \timeSlide{C with Classes}{
     Additions to C language:
-    \begin{itemize}%[<+->]
+    \itemstep{
         \item classes
         \item derived classes
         \item public and private access control
         \item constructors and destructors
-        \item \textbf<2>{call and return functions (removed later)}
+        \item \textbf<8->{call and return functions (removed later)}
         \item friend classes
         \item type checking and conversion of function arguments
-    \end{itemize}
+    }
 }{          
     \draw[thin,blue]
     (0.5, 0) node(l1979)[anchor=west,fill=green!20,rounded corners] {\textbf{1979} C with Classes};
@@ -40,32 +56,38 @@
 }
 
 \slide{Example code in C with Classes}{
-    \lstinputlisting{"src/c-with-classes.hpp"}
+    \only<1>{\lstinputlisting{"src/c-with-classes.hpp"}}
+    \only<2>{\highlightedListing{6}{6}{"src/c-with-classes.hpp"}}
+    \only<3>{\highlightedListing{11}{11}{"src/c-with-classes.hpp"}}
+    \only<4>{\highlightedListing{16}{18}{"src/c-with-classes.hpp"}}
 }
 
 
-\slide{Roots of C++}{
-    In C++ you can see the influence of 4 languages:
-    \begin{itemize}
-        \item C provided all base and syntax
-        \item Simula provided classes and inheritance
-        \item Algol68 provided:
-            \begin{itemize}
-                \item operator overloading, 
-                \item references 
-                \item ability to declare variables anywhere in a block  %NOTE: in C you had to declare variables first
-            \end{itemize}
-        \item BCPL provided // comments (later in 1985).
-    \end{itemize}
+\timeSlide{C with Classes}{
+    New features added in 1981:
+    \itemstep{
+        \item inline functions
+        \item default arguments
+        \item overloading of the assignment operator
+    }
+}{          
+    \draw[thin,blue]
+    (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
+    (0.5,-0.4) node(l1981)[anchor=west,fill=green!20,rounded corners] {\textbf{1981} New features};
+    
+    \draw[]
+    (1979) -- (l1979)
+    (1981) -- (l1981);
 }
 
 
 \timeSlide{First standard library}{
-    \begin{itemize}
+    First elements in std lib:
+    \itemstep{
         \item complex numbers
         \item string
         \item later: iostreams
-    \end{itemize}
+    }
 }{          
     \draw[thin,blue]
         (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
@@ -80,7 +102,7 @@
 
 
 \slide{C with Classes - summary}{
-    \begin{itemize}
+    \itemstep{
         \item Years of development: 1979-1983
         \item The idea was great
         \item The aim was clear:
@@ -92,6 +114,7 @@
         \item C with Classes didn't have many users :( 
         \item It wouldn't pay to support this language in the form it was
         \item C with Classes was a "medium success"
-    \end{itemize}
+    }
+    \pause
     Bjarne knew about it and drawn conclusions.
 }
