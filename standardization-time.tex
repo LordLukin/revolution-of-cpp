@@ -1,1 +1,381 @@
-\sectionSlide{Standardization time}{c++-logo}{\paperheight}{b}
+\sectionSlide{Standardization time}{elephand-toilet-standardization}{0.67\paperwidth}{b}
+
+
+\timeSlide{1998 - First ISO C++ standard}{
+    Features:
+    \itemstep{
+        \item RTTI (dynamic\_cast, typeid)
+        \item covariant return types
+        \item cast operators
+        \item mutable
+        \item bool
+        \item declarations in conditions
+        \item template instantiations,
+        \item member templates
+        \item export
+    }
+}{    
+	\draw[thin,blue]
+	(0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
+	(0.5,-0.4) node(l1981)[anchor=west] {1981 New features}
+	(0.5,-0.7) node(l1983)[anchor=west] {1983 1st std lib}
+	(0.5,-1.0) node(l1984)[anchor=west] {1984 C84/C++ }
+	(0.5,-1.3) node(l1985)[anchor=west] {1985 Cfront 1.0}
+	(0.5,-1.6) node(l1989)[anchor=west] {1989 Cfront 2.0}
+	(0.5,-2.0) node(l1991)[anchor=west] {1991 Cfront 3.0}
+	(0.5,-2.4) node(l1993)[anchor=west] {1993 Cfront 4.0}
+	(0.5,-3.2) node(l1998)[anchor=west,fill=green!20,rounded corners] {\textbf{1998} C++98};
+	
+	\draw[]
+	(1979) -- (l1979)
+	(1981) -- (l1981)
+	(1983) -- (l1983)
+	(1984) -- (l1984)
+	(1985) -- (l1985)
+	(1989) -- (l1989)
+	(1991) -- (l1991)
+	(1993) -- (l1993)
+	(1998) -- (l1998);
+}
+
+
+\timeSlide{1998 - First ISO C++ standard}{
+    Library additions:
+    \begin{itemize}
+        \item containers
+        \item algorithms
+        \item iterators
+        \item function objects (based on STL)
+        \item locale
+        \item bitset
+        \item valarray
+        \item auto\_ptr
+        \item templatized string
+        \item iostream
+        \item complex
+    \end{itemize}
+}{    
+    \draw[thin,blue]
+    (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
+    (0.5,-0.4) node(l1981)[anchor=west] {1981 New features}
+    (0.5,-0.7) node(l1983)[anchor=west] {1983 1st std lib}
+    (0.5,-1.0) node(l1984)[anchor=west] {1984 C84/C++ }
+    (0.5,-1.3) node(l1985)[anchor=west] {1985 Cfront 1.0}
+    (0.5,-1.6) node(l1989)[anchor=west] {1989 Cfront 2.0}
+    (0.5,-2.0) node(l1991)[anchor=west] {1991 Cfront 3.0}
+    (0.5,-2.4) node(l1993)[anchor=west] {1993 Cfront 4.0}
+    (0.5,-3.2) node(l1998)[anchor=west,fill=green!20,rounded corners] {\textbf{1998} C++98};
+    
+    \draw[]
+    (1979) -- (l1979)
+    (1981) -- (l1981)
+    (1983) -- (l1983)
+    (1984) -- (l1984)
+    (1985) -- (l1985)
+    (1989) -- (l1989)
+    (1991) -- (l1991)
+    (1993) -- (l1993)
+    (1998) -- (l1998);
+}
+
+
+\timeSlide{Bugfix release}{
+    New feature:
+    \begin{itemize}    
+        \item value initialization
+    \end{itemize}
+    \begin{itemize}
+        \item 125 defects fixed
+        \item defect 69: incontiguous std::vector
+    \end{itemize}
+}{    
+    \draw[thin,blue]
+    (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
+    (0.5,-0.4) node(l1981)[anchor=west] {1981 New features}
+    (0.5,-0.7) node(l1983)[anchor=west] {1983 1st std lib}
+    (0.5,-1.0) node(l1984)[anchor=west] {1984 C84/C++ }
+    (0.5,-1.3) node(l1985)[anchor=west] {1985 Cfront 1.0}
+    (0.5,-1.6) node(l1989)[anchor=west] {1989 Cfront 2.0}
+    (0.5,-2.0) node(l1991)[anchor=west] {1991 Cfront 3.0}
+    (0.5,-2.4) node(l1993)[anchor=west] {1993 Cfront 4.0}
+    (0.5,-3.2) node(l1998)[anchor=west] {1998 C++98}
+    (0.5,-4.0) node(l2003)[anchor=west,fill=green!20,rounded corners] {\textbf{2003} C++03};
+    
+    \draw[]
+    (1979) -- (l1979)
+    (1981) -- (l1981)
+    (1983) -- (l1983)
+    (1984) -- (l1984)
+    (1985) -- (l1985)
+    (1989) -- (l1989)
+    (1991) -- (l1991)
+    (1993) -- (l1993)
+    (1998) -- (l1998)
+    (2003) -- (l2003);
+}
+
+
+\timeSlide{Technical Report 1}{
+    From Boost:
+    \begin{itemize}    
+        \item reference wrapper
+        \item smart pointers
+        \item result of
+        \item bind
+        \item type traits
+        \item random
+        \item mathematical special functions
+        \item tuple
+        \item array
+        \item unordered containers (including hash)
+        \item regular expressions
+    \end{itemize}
+}{    %TODO: Timeline zmienić
+    \draw[thin,blue]
+    (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
+    (0.5,-0.4) node(l1981)[anchor=west] {1981 New features}
+    (0.5,-0.7) node(l1983)[anchor=west] {1983 1st std lib}
+    (0.5,-1.0) node(l1984)[anchor=west] {1984 C84/C++ }
+    (0.5,-1.3) node(l1985)[anchor=west] {1985 Cfront 1.0}
+    (0.5,-1.6) node(l1989)[anchor=west] {1989 Cfront 2.0}
+    (0.5,-2.0) node(l1991)[anchor=west] {1991 Cfront 3.0}
+    (0.5,-2.4) node(l1993)[anchor=west] {1993 Cfront 4.0}
+    (0.5,-3.2) node(l1998)[anchor=west] {1998 C++98}
+    (0.5,-4.0) node(l2003)[anchor=west,fill=green!20,rounded corners] {2003 C++03};
+    
+    \draw[]
+    (1979) -- (l1979)
+    (1981) -- (l1981)
+    (1983) -- (l1983)
+    (1984) -- (l1984)
+    (1985) -- (l1985)
+    (1989) -- (l1989)
+    (1991) -- (l1991)
+    (1993) -- (l1993)
+    (1998) -- (l1998)
+    (2003) -- (l2003);
+}
+
+
+\timeSlide{Technical Report 1}{
+    From C99:
+    \begin{itemize}    
+        \item mathematical functions from math.h that were new in C99
+        \item blank character class
+        \item floating-point environment
+        \item hexfloat I/O Manipulator
+        \item fixed-size integral types
+        \item the long long type
+        \item va\_copy
+        \item the snprintf() and vscanf() families of functions
+        \item the C99 conversion specifies for printf() and scanf() families of functions
+    \end{itemize}
+}{    %TODO: Timeline zmienić
+    \draw[thin,blue]
+    (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
+    (0.5,-0.4) node(l1981)[anchor=west] {1981 New features}
+    (0.5,-0.7) node(l1983)[anchor=west] {1983 1st std lib}
+    (0.5,-1.0) node(l1984)[anchor=west] {1984 C84/C++ }
+    (0.5,-1.3) node(l1985)[anchor=west] {1985 Cfront 1.0}
+    (0.5,-1.6) node(l1989)[anchor=west] {1989 Cfront 2.0}
+    (0.5,-2.0) node(l1991)[anchor=west] {1991 Cfront 3.0}
+    (0.5,-2.4) node(l1993)[anchor=west] {1993 Cfront 4.0}
+    (0.5,-3.2) node(l1998)[anchor=west] {1998 C++98}
+    (0.5,-4.0) node(l2003)[anchor=west,fill=green!20,rounded corners] {2003 C++03};
+    
+    \draw[]
+    (1979) -- (l1979)
+    (1981) -- (l1981)
+    (1983) -- (l1983)
+    (1984) -- (l1984)
+    (1985) -- (l1985)
+    (1989) -- (l1989)
+    (1991) -- (l1991)
+    (1993) -- (l1993)
+    (1998) -- (l1998)
+    (2003) -- (l2003);
+}
+
+
+\slide{C++0x}{
+    \begin{block}{}
+        C++ feels like a new language //
+        Bjarne Stroustrup
+    \end{block}
+    C++0x == C++11
+}
+
+
+\timeSlide{C++11}{
+    New language features:
+    \begin{itemize}    
+        \item auto and decltype
+        \item default, delete, final, override keywords
+        \item rvalue references
+        \item move constructors / move assignment
+        \item scoped enums
+        \item constexpr and literal types
+        \item list initialization, brace initializers
+        \item delegating constructors
+        \item nullptr
+        \item long long, char16\_t and char32\_t
+        \item type aliases
+    \end{itemize}
+}{
+    \draw[thin,blue]
+    (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
+    (0.5,-0.4) node(l1981)[anchor=west] {1981 New features}
+    (0.5,-0.7) node(l1983)[anchor=west] {1983 1st std lib}
+    (0.5,-1.0) node(l1984)[anchor=west] {1984 C84/C++ }
+    (0.5,-1.3) node(l1985)[anchor=west] {1985 Cfront 1.0}
+    (0.5,-1.6) node(l1989)[anchor=west] {1989 Cfront 2.0}
+    (0.5,-2.0) node(l1991)[anchor=west] {1991 Cfront 3.0}
+    (0.5,-2.4) node(l1993)[anchor=west] {1993 Cfront 4.0}
+    (0.5,-3.2) node(l1998)[anchor=west] {1998 C++98}
+    (0.5,-4.0) node(l2003)[anchor=west] {2003 C++03}
+    (0.5,-5.0) node(l2011)[anchor=west,fill=green!20,rounded corners] {\textbf{2011} C++11};
+    
+    \draw[]
+    (1979) -- (l1979)
+    (1981) -- (l1981)
+    (1983) -- (l1983)
+    (1984) -- (l1984)
+    (1985) -- (l1985)
+    (1989) -- (l1989)
+    (1991) -- (l1991)
+    (1993) -- (l1993)
+    (1998) -- (l1998)
+    (2003) -- (l2003)
+    (2011) -- (l2011);
+}
+
+
+\timeSlide{C++11}{
+    New language features:
+    \begin{itemize}    
+        \item variadic templates
+        \item user-defined literals
+        \item attributes
+        \item lambda expressions
+        \item noexcept
+        \item alignof and alignas
+        \item multithreaded memory model
+        \item thread-local storage
+        \item smart pointers
+        \item range based for loop
+        \item static assertions
+    \end{itemize}
+}{
+    \draw[thin,blue]
+    (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
+    (0.5,-0.4) node(l1981)[anchor=west] {1981 New features}
+    (0.5,-0.7) node(l1983)[anchor=west] {1983 1st std lib}
+    (0.5,-1.0) node(l1984)[anchor=west] {1984 C84/C++ }
+    (0.5,-1.3) node(l1985)[anchor=west] {1985 Cfront 1.0}
+    (0.5,-1.6) node(l1989)[anchor=west] {1989 Cfront 2.0}
+    (0.5,-2.0) node(l1991)[anchor=west] {1991 Cfront 3.0}
+    (0.5,-2.4) node(l1993)[anchor=west] {1993 Cfront 4.0}
+    (0.5,-3.2) node(l1998)[anchor=west] {1998 C++98}
+    (0.5,-4.0) node(l2003)[anchor=west] {2003 C++03}
+    (0.5,-5.0) node(l2011)[anchor=west,fill=green!20,rounded corners] {\textbf{2011} C++11};
+    
+    \draw[]
+    (1979) -- (l1979)
+    (1981) -- (l1981)
+    (1983) -- (l1983)
+    (1984) -- (l1984)
+    (1985) -- (l1985)
+    (1989) -- (l1989)
+    (1991) -- (l1991)
+    (1993) -- (l1993)
+    (1998) -- (l1998)
+    (2003) -- (l2003)
+    (2011) -- (l2011);
+}
+
+
+\timeSlide{C++14}{
+    New language features:
+    \begin{itemize}    
+        \item generic lambdas
+        \item lambda captures expressions
+        \item function return type deduction
+        \item alternate type deduction on declaration
+        \item relaxed restrictions on constexpr functions
+        \item variable templates
+        \item binary literals
+        \item digit separators
+        \item deprecated attribute
+        \item C++ sized deallocation
+    \end{itemize}
+}{
+    \draw[thin,blue]
+    (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
+    (0.5,-0.4) node(l1981)[anchor=west] {1981 New features}
+    (0.5,-0.7) node(l1983)[anchor=west] {1983 1st std lib}
+    (0.5,-1.0) node(l1984)[anchor=west] {1984 C84/C++ }
+    (0.5,-1.3) node(l1985)[anchor=west] {1985 Cfront 1.0}
+    (0.5,-1.6) node(l1989)[anchor=west] {1989 Cfront 2.0}
+    (0.5,-2.0) node(l1991)[anchor=west] {1991 Cfront 3.0}
+    (0.5,-2.4) node(l1993)[anchor=west] {1993 Cfront 4.0}
+    (0.5,-3.2) node(l1998)[anchor=west] {1998 C++98}
+    (0.5,-4.0) node(l2003)[anchor=west] {2003 C++03}
+    (0.5,-5.0) node(l2011)[anchor=west] {2011 C++11}
+    (0.5,-5.5) node(l2014)[anchor=west,fill=green!20,rounded corners] {\textbf{2014} C++14};
+    
+    \draw[]
+    (1979) -- (l1979)
+    (1981) -- (l1981)
+    (1983) -- (l1983)
+    (1984) -- (l1984)
+    (1985) -- (l1985)
+    (1989) -- (l1989)
+    (1991) -- (l1991)
+    (1993) -- (l1993)
+    (1998) -- (l1998)
+    (2003) -- (l2003)
+    (2011) -- (l2011)
+    (2014) -- (l2014);
+}
+
+
+\timeSlide{Complete timeline}{
+}{    
+	\draw[thin,blue]
+	(0.5, 0) node(l1979)[anchor=west,fill=green!20,rounded corners] {\textbf{1979} C with Classes}
+	(0.5,-0.4) node(l1981)[anchor=west] {1981 New features}
+	(0.5,-0.7) node(l1983)[anchor=west] {1983 1st std lib}
+	(0.5,-1.0) node(l1984)[anchor=west] {1984 C84/C++ }
+	(0.5,-1.3) node(l1985)[anchor=west] {1985 Cfront 1.0}
+	%(0.5,-2.0) node(l1986)[anchor=west] {1986 Cfront 1.1}
+	%(0.5,-2.4) node(l1987)[anchor=west] {1987 Cfront 1.2}
+	(0.5,-1.6) node(l1989)[anchor=west] {1989 Cfront 2.0}
+	%(0.5,-3.2) node(l1990)[anchor=west] {1990 Cfront 2.1}
+	(0.5,-2.0) node(l1991)[anchor=west] {1991 Cfront 3.0}
+	(0.5,-2.4) node(l1993)[anchor=west] {1993 Cfront 4.0}
+	(0.5,-3.2) node(l1998)[anchor=west] {1998 C++98}
+	(0.5,-4.0) node(l2003)[anchor=west] {2003 C++03}
+	(0.5,-5.0) node(l2011)[anchor=west] {2011 C++11}
+	(0.5,-5.5) node(l2014)[anchor=west] {2014 C++14}
+	(0.5,-6.0) node(l2017)[anchor=west] {2017 C++17}
+	(0.5,-6.5) node(l2020)[anchor=west] {2020 C++20};
+	
+	\draw[]
+	(1979) -- (l1979)
+	(1981) -- (l1981)
+	(1983) -- (l1983)
+	(1984) -- (l1984)
+	(1985) -- (l1985)
+	%(1986) -- (l1986)
+	%(1987) -- (l1987)
+	(1989) -- (l1989)
+	%(1990) -- (l1990)
+	(1991) -- (l1991)
+	(1993) -- (l1993)
+	(1998) -- (l1998)
+	(2003) -- (l2003)
+	(2011) -- (l2011)
+	(2014) -- (l2014)
+	(2017) -- (l2017)
+	(2020) -- (l2020);
+}
