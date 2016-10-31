@@ -96,38 +96,34 @@
 }
 
 
-\slide{Example code in C++ 1.0}{ %TODO: zwiększyć czcionkę
-	%TODO: Remove this slide? Only say about overload keyword.
-	\Large
+\slide{Example code in C++ 1.0}{ 
     Overloaded functions:
-    \only<1>{\lstinputlisting{"src/cfront1_overload.hpp"}}
-%    \only<2>{\highlightedListing{1}{1}{"src/cfront1_overload.hpp"}}
+    \only<1>{\lstinputlisting[basicstyle=\normalsize]{"src/cfront1_overload.hpp"}}
 }
 
 
 \slide{Example code in C++ 1.0}{
     New and delete operators:
     Because you want to write that:
-    \lstinputlisting[linerange={1-1}]{"src/cfront1_new.hpp"}\pause
+    \lstinputlisting[linerange={1-1},basicstyle=\normalsize]{"src/cfront1_new.hpp"}\pause
     Instead of that:
-    \lstinputlisting[linerange={3-5}]{"src/cfront1_new.hpp"}
+    \lstinputlisting[linerange={3-5},basicstyle=\normalsize]{"src/cfront1_new.hpp"}
 }
 
 
 \slide{Example code in C++ 1.0}{
-	%TODO: Think about removing this slide
     Improved type checking: % TODO: zaznaczyć 3 kropki na zielono
-    \lstinputlisting{"src/cfront1_printf.hpp"}
+    \lstinputlisting[basicstyle=\normalsize]{"src/cfront1_printf.hpp"}
 }
 
 
 \timeSlide{Cfront 1.1 (1986) \& Cfront 1.2 (1987)}{
     New features:
     \begin{enumerate}
-        \item bug fixes
         \item pointers to members
         \item protected members
     \end{enumerate}
+    + bug fixes
     
 }{
     \draw[thin,blue]
@@ -184,10 +180,9 @@
     \begin{enumerate}
         \item namespaces
         \item templates
-        \item exceptions?	%NOTE: See BaSz presentation on exceptions
         \item nested classes
-    \end{enumerate}
-    
+        \item exceptions ("code approach")	%NOTE: See BaSz presentation on exceptions
+    \end{enumerate}   
 }{
     \draw[thin,blue]
     (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
@@ -209,12 +204,54 @@
 }
 
 
+\slide{Exceptions - code approach}{
+    \begin{columns}
+        \begin{column}{0.55\textwidth}
+            \begin{itemize}[<+->]
+                \item root of "bad exceptions" myth
+                \item runtime overhead
+                \item memory overhead
+                \item legends about resource consumption
+                \item see: Bartosz 'BaSz' Szurgot - \textit{Hello Huston} \footnotemark
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.45\textwidth}
+            \centering
+            \includegraphics<4->[width=0.38\paperwidth]{too-much-want}
+        \end{column}
+    \end{columns}
+    \footnotetext[1]{\url{http://www.baszerr.eu/lib/exe/fetch.php/docs/hello_houston.pdf}}
+}
+
+
+\slide{Exceptions - table approach}{
+    \begin{columns}
+        \begin{column}{0.55\textwidth}
+            \begin{itemize}[<+->]
+                \item no runtime overhead (if no exception)
+                \item no memory overhead
+                \item increased binary size
+                \item unknown exception handling time
+                \item the fastest solution (if no exception)
+                \item impossible without compiler support
+                \item exceptions vs Cfront
+                \item see: Bartosz 'BaSz' Szurgot - \textit{Hello Huston} \footnotemark
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.45\textwidth}
+            \centering
+            \includegraphics<7->[width=0.4\paperwidth]{donkey-cfront}
+        \end{column}
+    \end{columns}
+    \footnotetext[1]{\url{http://www.baszerr.eu/lib/exe/fetch.php/docs/hello_houston.pdf}}
+}
+
+
 \timeSlide{Cfront 4.0}{
     New features:
     \begin{enumerate}
-        \item Exception handling
+        \item exceptions ("table approach")
     \end{enumerate}
-    
 }{
     \draw[thin,blue]
     (0.5, 0) node(l1979)[anchor=west] {1979 C with Classes}
