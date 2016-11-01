@@ -1,17 +1,40 @@
 \section{(R)evolution!}
 
 
-\slide{C++ is becoming more and more complicated...}{
-    \centering
-    \includegraphics[height=0.8\paperheight]{bjarne-telephone}
-}
-%TODO: jakiś obrazek plątaniny porównujący skomplikowanie języka kiedyś i dziś
-
 \slide{(R)evolution!}{
     \centering
     \only<1>{\LARGE Evolution of C++ vs Revolution of C++}
     \only<2>{\includegraphics[height=0.8\paperheight]{devolution}}
     \only<3>{\includegraphics[height=0.8\paperheight]{your-cat-is-evolving}}
+}
+
+
+\slide{C++ is becoming more and more complicated...}{
+    \centering
+    \includegraphics[height=0.8\paperheight]{bjarne-telephone}
+}
+
+
+%TODO: jakiś obrazek plątaniny porównujący skomplikowanie języka kiedyś i dziś
+%TODO: jakieś zdjęcie z zarzutami
+%TODO: pomyśleć o filmie 
+\slide{stdlib is poor}{
+    \begin{columns}
+        \begin{column}{0.3\textwidth}
+            \begin{itemize}[<+->]
+                \item Some people say, that C++ standard library is small...
+                \item In comparison with another languages
+                \item Examples from presentation \textit{"One C++"} by Herb Sutter
+                \item But it will grow in next standards
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+            \only<1>{\includegraphics[height=0.7\paperheight]{cpp_libs}}
+            \only<2>{\includegraphics[height=0.85\paperheight]{cpp11_lib}}
+            \only<3>{\includegraphics[height=0.8\paperheight]{cpp11_lib2}}\\
+            \only<4>{\centering \includegraphics[height=0.8\paperheight]{bloated-jabbascript-frameworks}}
+        \end{column}
+    \end{columns}
 }
 
 
@@ -24,7 +47,7 @@
             \hline C84 & "the ARM" - 1989 & - \\
             \hline
             \hline C++98 & IX 1998 & 2003 (EDG + Dinkumware) \\
-            \hline C++03 & X 2003 & gcc? \\
+            \hline C++03 & X 2003 & ? \\
             \hline C++11 & IX 2011 & IV 2013 (clang3.3) \\
             \hline C++14 & III 2014 & XI 2013 (clang 3.4) \\
             \hline C++17 & ? & ? \\
@@ -46,7 +69,7 @@
             \item Modern C++ facilitate above needs % Effective modern C++
             \item VM languages will not be faster than C++
             \item More and more mobile apps are written in C++
-            \item Can C perform better? % Basz %TODO: QR kod do prezentacji bartosza
+            \item Can C perform better? %TODO: QR kod do prezentacji Bartosza
         \end{itemize}
     \end{column}
     \begin{column}{0.43\textwidth}
